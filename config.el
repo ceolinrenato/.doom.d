@@ -55,3 +55,6 @@
 '(lsp-clients-elixir-server-executable "~/.lsp/elixir-ls/release/language_server.sh")
 
 (setq flycheck-elixir-credo-strict t)
+
+(setq plantuml-jar-path "/home/renato/.emacs.d/.local/etc/plantuml.jar")
+(setq plantuml-default-exec-mode 'jar)
