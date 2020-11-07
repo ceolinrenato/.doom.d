@@ -53,18 +53,7 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
- (use-package lsp-mode
-   :commands lsp
-   :ensure t
-   :diminish lsp-mode
-   :hook
-   (elixir-mode . lsp)
-   :init
-   (add-to-list 'exec-path "~/.lsp/elixir-ls/release"))
-
-
-
 (setq flycheck-elixir-credo-strict t)
 
-(setq plantuml-jar-path "~/.emacs.d/.local/etc/plantuml.jar")
+(setq plantuml-jar-path "/home/renatoceolin/.emacs.d/.local/etc/plantuml.jar")
 (setq plantuml-default-exec-mode 'jar)
