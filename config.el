@@ -57,3 +57,6 @@
 
 (setq plantuml-jar-path "/home/renatoceolin/.emacs.d/.local/etc/plantuml.jar")
 (setq plantuml-default-exec-mode 'jar)
+
+(setq lsp-enable-file-watchers t)
+(setq lsp-file-watch-threshold 20000)
