@@ -62,5 +62,5 @@
 (setq lsp-enable-file-watchers t)
 (setq lsp-file-watch-threshold 20000)
 
-(when window-system (set-frame-size (selected-frame) 200 51))
+(when window-system (set-frame-size (selected-frame) 200 49))
 (when window-system (set-frame-position (selected-frame) 50 40))
