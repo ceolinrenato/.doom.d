@@ -56,7 +56,7 @@
 
 (setq flycheck-elixir-credo-strict t)
 
-(setq plantuml-jar-path "~/.emacs.d/.local/etc/plantuml.jar")
+(setq plantuml-jar-path (expand-file-name "~/.emacs.d/.local/etc/plantuml.jar"))
 (setq plantuml-default-exec-mode 'jar)
 
 (setq lsp-enable-file-watchers t)
