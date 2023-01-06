@@ -35,11 +35,7 @@
 ;; org-journal
 
 (setq org-journal-dir "~/org/journal"
-      org-journal-enable-agenda-integration t
-      org-icalendar-store-UID t
-      org-icalendar-include-todo "all"
-      org-journal-date-format "%A, %d %B %Y"
-      org-icalendar-combined-agenda-file "~/Documents/org-journal.ics")
+      org-journal-date-format "%A, %d %B %Y")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
