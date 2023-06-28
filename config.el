@@ -66,3 +66,5 @@
 
 (setq lsp-enable-file-watchers t)
 (setq lsp-file-watch-threshold 20000)
+
+(add-hook 'lsp-after-initialize-hook (setq typescript-indent-level 2))
