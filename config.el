@@ -69,3 +69,5 @@
 (setq lsp-elixir-fetch-deps t)
 
 (add-hook 'lsp-after-initialize-hook (setq typescript-indent-level 2))
+
+(setq-hook! 'dockerfile-mode-hook +format-with :none)
