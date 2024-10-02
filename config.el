@@ -71,3 +71,6 @@
 (add-hook 'lsp-after-initialize-hook (setq typescript-indent-level 2))
 
 (setq-hook! 'dockerfile-mode-hook +format-with :none)
+
+(map! "M-<up>" #'drag-stuff-up
+      "M-<down>" #'drag-stuff-down)
