@@ -67,6 +67,7 @@
 (setq lsp-enable-file-watchers t)
 (setq lsp-file-watch-threshold 20000)
 (setq lsp-elixir-fetch-deps t)
+(setq vterm-max-scrollback 100000)
 
 (add-hook 'lsp-after-initialize-hook (setq typescript-indent-level 2))
 
