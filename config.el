@@ -75,3 +75,19 @@
 
 (map! "M-<up>" #'drag-stuff-up
       "M-<down>" #'drag-stuff-down)
+
+
+(after! lsp-java
+  (setq lsp-java-java-path "~/.asdf/installs/java/openjdk-21.0.2/bin/java"
+        lsp-java-import-gradle-wrapper-enabled t
+        lsp-java-import-gradle-home nil
+        lsp-java-jdt-download-url "https://www.eclipse.org/downloads/download.php?file=/jdtls/milestones/1.40.0/jdt-language-server-1.40.0-202409261450.tar.gz"
+        lsp-java-configuration-runtimes
+        '[(:name "JavaSE-21"
+           :path "~/.asdf/installs/java/openjdk-21.0.2")
+          (:name "JavaSE-20"
+           :path "~/.asdf/installs/java/corretto-20.0.2.10.1"
+           :default t)]
+        lsp-java-vmargs (list
+                         "-noverify"
+                         "--enable-preview")))
