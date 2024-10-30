@@ -76,7 +76,6 @@
 (map! "M-<up>" #'drag-stuff-up
       "M-<down>" #'drag-stuff-down)
 
-
 (after! lsp-java
   (setq lsp-java-java-path "~/.asdf/installs/java/openjdk-21.0.2/bin/java"
         lsp-java-import-gradle-wrapper-enabled t
@@ -91,3 +90,6 @@
         lsp-java-vmargs (list
                          "-noverify"
                          "--enable-preview")))
+
+(after! google-java-format
+  (setq google-java-format-executable (executable-find "google-java-format")))
