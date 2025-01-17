@@ -89,7 +89,17 @@
            :default t)]
         lsp-java-vmargs (list
                          "-noverify"
-                         "--enable-preview")))
+                         "--enable-preview"))
+  (setq lombok-library-path (concat doom-data-dir "lombok.jar"))
+
+  (unless (file-exists-p lombok-library-path)
+    (url-copy-file "https://projectlombok.org/downloads/lombok.jar" lombok-library-path))
+
+  (setq lsp-java-vmargs '("-XX:+UseParallelGC" "-XX:GCTimeRatio=4" "-XX:AdaptiveSizePolicyWeight=90" "-Dsun.zip.disableMemoryMapping=true" "-Xmx4G" "-Xms100m"))
+
+  (push (concat "-javaagent:"
+                (expand-file-name lombok-library-path))
+        lsp-java-vmargs))
 
 (after! google-java-format
   (setq google-java-format-executable (executable-find "google-java-format")))
