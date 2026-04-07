@@ -103,3 +103,7 @@
 
 (after! google-java-format
   (setq google-java-format-executable (executable-find "google-java-format")))
+
+(use-package! mise
+  :config
+  (add-hook 'after-init-hook #'global-mise-mode))

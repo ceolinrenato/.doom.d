@@ -52,3 +52,4 @@
 (package! prisma-mode :recipe (:host github :repo "pimeys/emacs-prisma-mode" :branch "main"))
 (package! drag-stuff)
 (package! google-java-format :recipe (:host github :repo "google/google-java-format" :branch "master" :files ("google-java-format" "core/src/main/scripts/*.el")))
+(package! mise)
